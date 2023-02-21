@@ -1,6 +1,4 @@
-# To_do App
+# Notes App
 
-Add to-do(s) delete them, check them off.
-
-To delete longpress on to-do
+This app is for creating, deleting, updating of notes
 
