@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           Navigator.of(context)
               .push(
             MaterialPageRoute(
-              builder: (context) => AddNote(),
+              builder: (context) => const AddNote(),
             ),
           )
               .then((value) {
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         elevation: 0.0,
-        backgroundColor: Color(0xff070706),
+        backgroundColor: const Color(0xff070706),
       ),
       //
       body: FutureBuilder<QuerySnapshot>(
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Text(
                             "${data['title']}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 24.0,
                               fontFamily: "lato",
                               fontWeight: FontWeight.bold,
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                             alignment: Alignment.centerRight,
                             child: Text(
                               formattedTime,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 20.0,
                                 fontFamily: "lato",
                                 color: Colors.black87,
@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
               },
             );
           } else {
-            return Center(
+            return const Center(
               child: Text("Loading..."),
             );
           }

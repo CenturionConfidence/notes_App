@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.white,
-        scaffoldBackgroundColor: const Color(0xff070706), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.white),
+        scaffoldBackgroundColor: const Color(0xff070706),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Colors.white,
+        ),
       ),
       // which used to re-authenticate every time App was opened
       // earlier I was simply calling the Login page

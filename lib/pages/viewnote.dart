@@ -25,7 +25,6 @@ class _ViewNoteState extends State<ViewNote> {
     des = widget.data['description'];
     return SafeArea(
       child: Scaffold(
-        
         floatingActionButton: edit
             ? FloatingActionButton(
                 onPressed: save,
@@ -41,9 +40,7 @@ class _ViewNoteState extends State<ViewNote> {
         //
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(
-              12.0,
-            ),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               children: [
                 Row(
@@ -53,7 +50,7 @@ class _ViewNoteState extends State<ViewNote> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back_ios_outlined,
                         size: 24.0,
                       ),
